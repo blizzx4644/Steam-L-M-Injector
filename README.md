@@ -1,4 +1,4 @@
-# Steam Injector
+# Steam L&M Injector
 
 Application moderne pour ajouter des jeux à Steam via des manifests et lua. Interface graphique améliorée avec navigateur intégré.
 
