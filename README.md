@@ -115,7 +115,6 @@ python steam_injector.py
 - **config.json** : Sauvegarde le chemin Steam et les préférences
 - **temp/** : Dossier temporaire pour les téléchargements (auto-nettoyé)
 - **logs/** : Historique des installations (si activé)
-- 
 
 ### v1.0.0
 - Version initiale avec support de l'ajout de jeux via manifests et lua
@@ -132,7 +131,3 @@ Ce projet est sous licence MIT. Voir le fichier `LICENSE` pour plus de détails.
 
 - **SPIN0ZAi** pour le dépôt SB_manifest_DB
 
-
----
-
-**⚠️ Avertissement** : Cet outil modifie les fichiers Steam. Utilisez-le à vos propres risques et sauvegardez vos données importantes.
