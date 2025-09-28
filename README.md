@@ -132,11 +132,6 @@ Ce projet est sous licence MIT. Voir le fichier `LICENSE` pour plus de détails.
 
 - **SPIN0ZAi** pour le dépôt SB_manifest_DB
 
-## 📞 Support
-
-- **Issues GitHub** : Pour les bugs et demandes de fonctionnalités
-- **Discussions** : Pour l'aide et les questions générales
-- **Wiki** : Pour la documentation avancée
 
 ---
 
