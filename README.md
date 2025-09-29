@@ -49,8 +49,7 @@ Application moderne pour ajouter des jeux à Steam via des manifests et lua. Int
 
 ## 📦 Installation
 
-Vous pouvez maintenant utiliser les scripts .bat et .sh fournis dans la V2 (la plus récente) pour installer automatiquement Python et ses dépendances.
-
+Vous pouvez maintenant utiliser les scripts .bat et .sh fournis dans la V2 (la plus récente) pour installer automatiquement Python et ses dépendances.(Il y a un un fichier .zip contenant les fichiers .py, requirements.txt et les scripts d’installation.)
 1. **Clonez ou téléchargez** ce dépôt
    ```bash
    git clone https://github.com/votre-repo/steam-injector.git
