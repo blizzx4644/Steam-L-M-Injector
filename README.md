@@ -3,7 +3,8 @@
 Application moderne pour ajouter des jeux à Steam via des manifests et lua. Interface graphique améliorée avec navigateur intégré.
 
 
-<img width="1920" height="1017" alt="Steam Injector 1" src="https://github.com/user-attachments/assets/f977ac95-c8ee-47c1-a033-08dcfe7c5ec2" />
+<img width="1920" height="1017" alt="Steam Injector V2" src="https://github.com/user-attachments/assets/cae53ab9-4b00-43af-9172-24a12a522ef6" />
+
 
 ##  Fonctionnalités
 
@@ -17,7 +18,7 @@ Application moderne pour ajouter des jeux à Steam via des manifests et lua. Int
 - **Aide intégrée** avec raccourcis clavier
 
 ### Navigation et Détection
-- Navigateur Steam Store intégré avec moteur web complet
+- Navigateur SteamDB intégré avec moteur web complet
 - Détection automatique de l'App ID depuis n'importe quelle URL Steam
 - Support des URLs multiples : `/app/`, `/apps/`, paramètres `appid=`
 - Surveillance en temps réel des changements d'URL
