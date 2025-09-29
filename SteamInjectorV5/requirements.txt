@@ -1,0 +1,27 @@
+# Steam Injector v2.0 - Dépendances Python
+
+# Requêtes HTTP pour télécharger les fichiers depuis GitHub
+requests>=2.31.0
+
+# Interface graphique et navigateur web intégré
+PyQt6>=6.5.0
+PyQt6-WebEngine>=6.5.0
+
+# Gestion des processus système pour redémarrer Steam
+psutil>=5.9.0
+
+# Parsing HTML (utilisé pour analyser les pages web si nécessaire)
+beautifulsoup4>=4.12.2
+
+# Utilitaires Windows (optionnel, pour les fonctionnalités avancées sur Windows)
+pywin32>=306; sys_platform == "win32"
+
+# Gestion des archives ZIP (inclus dans Python standard mais listé pour clarté)
+# zipfile - inclus dans la bibliothèque standard
+
+# Gestion des threads et des fichiers (inclus dans Python standard)
+# threading - inclus dans la bibliothèque standard
+# subprocess - inclus dans la bibliothèque standard
+# shutil - inclus dans la bibliothèque standard
+# os - inclus dans la bibliothèque standard
+# json - inclus dans la bibliothèque standard
