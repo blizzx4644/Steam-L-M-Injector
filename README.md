@@ -6,6 +6,16 @@ Application moderne pour ajouter des jeux à Steam via des manifests et lua. Int
 <img width="1920" height="1017" alt="Steam Injector V2" src="https://github.com/user-attachments/assets/cae53ab9-4b00-43af-9172-24a12a522ef6" />
 
 
+Version utilisant [SteamStore](https://store.steampowered.com) :
+
+https://github.com/blizzx4644/Steam-L-M-Injector/releases/tag/VsteamStore
+
+
+Version utilisant SteamDB [SteamDB](https://store.steampowered.com) :
+
+https://github.com/blizzx4644/Steam-L-M-Injector/releases/tag/VSteamDB
+
+
 ##  Fonctionnalités
 
 - **Interface utilisateur** avec design moderne et couleurs thématiques
