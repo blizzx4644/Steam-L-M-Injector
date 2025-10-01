@@ -3,10 +3,6 @@
 Modern application for adding games to Steam via manifests and lua. Enhanced graphical interface with integrated browser.
 
 
-<img width="1920" height="1017" alt="Steam Injector V2" src="https://github.com/user-attachments/assets/cae53ab9-4b00-43af-9172-24a12a522ef6" />
-
-
-
 ##  Features
 
 - **Multilingual interface** with support for English, French, Spanish, and German
@@ -163,24 +159,6 @@ The application automatically handles and installs the following file types:
 - **.vdf** files → Steam plugins folder
 - **.acf** files → Steam steamapps folder
 
-## 🔄 Version History
-
-### v2.0.0
-- Added multilingual support (English, French, Spanish, German)
-- Implemented Steam restart functionality
-- Added multiple site support (SteamDB, Steam Store)
-- Enhanced UI with language selector
-- Improved process management for Steam
-- Better error handling and status updates
-- Added force-close capability for stuck Steam processes
-- Improved download reliability with multi-URL fallback
-- Enhanced visual feedback during operations
-
-### v1.0.0
-- Initial version with support for adding games via manifests and lua
-- Modern user interface
-- Version .exe for Windows
-- Python support for Windows, Linux, and macOS
 
 
 ## 🙏 Acknowledgments
