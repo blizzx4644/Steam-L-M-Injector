@@ -47,7 +47,7 @@ Modern application for adding games to Steam via manifests and lua. Enhanced gra
 - Automatic Steam relaunch after restart
 - Status updates during restart process
 
-## 🔧 Requirements
+##  Requirements
 
 - **Python 3.8 or higher**
 - **Web browser** (Chrome/Chromium recommended for optimal display)
@@ -55,12 +55,12 @@ Modern application for adding games to Steam via manifests and lua. Enhanced gra
 - **Administrator rights** (recommended for writing to Steam folders)
 
 ### Supported Systems
-- ✅ Windows 10/11 (x64) - .exe version available
-- 🐍 Windows (Python 3.8+)
-- 🐍 Linux (Python 3.8+)
-- 🐍 macOS (Python 3.8+)
+-  Windows 10/11 (x64) - .exe version available
+-  Windows (Python 3.8+)
+-  Linux (Python 3.8+)
+-  macOS (Python 3.8+)
 
-## 🌐 Supported Languages
+##  Supported Languages
 
 - 🇫🇷 French (Français)
 - 🇬🇧 English
@@ -69,7 +69,7 @@ Modern application for adding games to Steam via manifests and lua. Enhanced gra
 
 Switch languages anytime using the dropdown menu in the toolbar.
 
-## 📦 Installation
+##  Installation
 
 You can now use the .bat and .sh scripts provided in V2 (the most recent) to automatically install Python and its dependencies. (There is a .zip file containing the .py files, requirements.txt, and installation scripts.)
 
@@ -106,7 +106,7 @@ pip install -r requirements.txt
 python steam_injector.py
 ```
 
-## 🚀 Usage
+##  Usage
 
 ### First Launch
 1. **Automatic configuration**: The application automatically detects Steam
@@ -122,7 +122,7 @@ python steam_injector.py
 5. **Restart**: Click "Restart Steam" button or restart manually to see the game in your library
 
 ### Steam Restart Feature
-- **One-click restart**: Use the "🔄 Restart Steam" button in the toolbar
+- **One-click restart**: Use the " Restart Steam" button in the toolbar
 - **Automatic process management**: The application handles closing and reopening Steam
 - **Status updates**: Real-time feedback during the restart process
 - **Safety checks**: Cannot restart during active downloads
@@ -151,7 +151,7 @@ python steam_injector.py
 - **temp/**: Temporary folder for downloads (auto-cleaned)
 - **logs/**: Installation history (if enabled)
 
-## 📋 File Support
+##  File Support
 
 The application automatically handles and installs the following file types:
 - **.manifest** files → Steam depotcache folder
@@ -161,11 +161,11 @@ The application automatically handles and installs the following file types:
 
 
 
-## 🙏 Acknowledgments
+##  Acknowledgments
 
 - **SPIN0ZAi** for the SB_manifest_DB repository
 
-## ⚠️ Notes
+##  Notes
 
 - Administrator rights are recommended for full functionality
 - The application requires an active internet connection for downloads
