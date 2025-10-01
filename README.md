@@ -1,4 +1,4 @@
-le main sera mis a jour avec la V6 demain (deja dispo dans les release)
+le main sera mis a jour avec la V6 demain 02/10 vers 18H (deja dispo dans les release)
 
 # Steam L&M Injector
 
