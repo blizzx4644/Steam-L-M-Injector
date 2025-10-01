@@ -11,7 +11,7 @@ Version utilisant [SteamStore](https://store.steampowered.com) :
 https://github.com/blizzx4644/Steam-L-M-Injector/releases/tag/VsteamStore
 
 
-Version utilisant SteamDB [SteamDB](https://store.steampowered.com) :
+Version utilisant SteamDB [SteamDB](https://steamdb.info) :
 
 https://github.com/blizzx4644/Steam-L-M-Injector/releases/tag/VSteamDB
 
