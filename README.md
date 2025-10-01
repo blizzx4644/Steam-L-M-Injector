@@ -1,3 +1,5 @@
+le main sera mis a jour avec la V6 demain (deja dispo dans les release)
+
 # Steam L&M Injector
 
 Modern application for adding games to Steam via manifests and lua. Enhanced graphical interface with integrated browser.
