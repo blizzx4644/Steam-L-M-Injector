@@ -1,84 +1,101 @@
 # Steam L&M Injector
 
-Application moderne pour ajouter des jeux à Steam via des manifests et lua. Interface graphique améliorée avec navigateur intégré.
+Modern application for adding games to Steam via manifests and lua. Enhanced graphical interface with integrated browser.
 
 
 <img width="1920" height="1017" alt="Steam Injector V2" src="https://github.com/user-attachments/assets/cae53ab9-4b00-43af-9172-24a12a522ef6" />
 
 
-Version utilisant [SteamStore](https://store.steampowered.com) :
 
-https://github.com/blizzx4644/Steam-L-M-Injector/releases/tag/VsteamStore
+##  Features
 
+- **Multilingual interface** with support for English, French, Spanish, and German
+- **User interface** with modern design and themed colors
+- **Automatic Steam path detection** on Windows
+- **Error handling** with informative messages
+- **Background downloads** without blocking the interface
+- **Visual indicators** for progress and status
+- **Dependency verification** at startup
+- **Automatic cleanup** of temporary files
+- **Integrated help** with keyboard shortcuts
+- **Steam restart functionality** with automatic process management
+- **Multiple site support** with dropdown selector (SteamDB, Steam Store)
 
-Version utilisant SteamDB [SteamDB](https://steamdb.info) :
+### Navigation and Detection
+- Integrated browser with full web engine
+- Automatic App ID detection from any Steam URL
+- Support for multiple URLs: `/app/`, `/apps/`, `appid=` parameters
+- Real-time monitoring of URL changes
+- Site switching between SteamDB and Steam Store
 
-https://github.com/blizzx4644/Steam-L-M-Injector/releases/tag/VSteamDB
-
-
-##  Fonctionnalités
-
-- **Interface utilisateur** avec design moderne et couleurs thématiques
-- **Détection automatique du chemin Steam** sur Windows
-- **Gestion des erreurs** avec messages informatifs
-- **Téléchargements en arrière-plan** sans bloquer l'interface
-- **Indicateurs visuels** de progression et d'état
-- **Vérification des dépendances** au démarrage
-- **Nettoyage automatique** des fichiers temporaires
-- **Aide intégrée** avec raccourcis clavier
-
-### Navigation et Détection
-- Navigateur SteamDB intégré avec moteur web complet
-- Détection automatique de l'App ID depuis n'importe quelle URL Steam
-- Support des URLs multiples : `/app/`, `/apps/`, paramètres `appid=`
-- Surveillance en temps réel des changements d'URL
-
-### Interface et Contrôles  
-- Interface graphique moderne avec indicateurs visuels
-- Raccourcis clavier intuitifs
+### Interface and Controls  
+- Modern graphical interface with visual indicators
+- Intuitive keyboard shortcuts
+- Language selector with flag icons
+- Dark theme with custom styling
+- Responsive layout with resizable panels
   
-### Installation et Téléchargement
-- Téléchargement et extraction automatiques des fichiers nécessaires
-- Installation en arrière-plan sans blocage
-- Gestion intelligente des permissions
-- Configuration automatique des dossiers Steam
-- Nettoyage automatique des fichiers temporaires
+### Installation and Download
+- Automatic download and extraction of necessary files
+- Background installation without blocking
+- Intelligent permission management
+- Automatic Steam folder configuration
+- Automatic cleanup of temporary files
+- Support for .manifest, .lua, .vdf, and .acf files
+- Multi-URL fallback system for reliable downloads
 
-## 🔧 Prérequis
+### Steam Management
+- One-click Steam restart functionality
+- Automatic Steam process detection and closure
+- Force kill capability for stuck processes
+- Automatic Steam relaunch after restart
+- Status updates during restart process
 
-- **Python 3.8 ou supérieur**
-- **Navigateur web** (Chrome/Chromium recommandé pour l'affichage optimal)
-- **Compte Steam** avec installation locale
-- **Droits administrateur** (recommandé pour l'écriture dans les dossiers Steam)
+## 🔧 Requirements
 
-### Systèmes Supportés
-- ✅ Windows 10/11 (x64) - Version .exe disponible
+- **Python 3.8 or higher**
+- **Web browser** (Chrome/Chromium recommended for optimal display)
+- **Steam account** with local installation
+- **Administrator rights** (recommended for writing to Steam folders)
+
+### Supported Systems
+- ✅ Windows 10/11 (x64) - .exe version available
 - 🐍 Windows (Python 3.8+)
 - 🐍 Linux (Python 3.8+)
 - 🐍 macOS (Python 3.8+)
 
+## 🌐 Supported Languages
+
+- 🇫🇷 French (Français)
+- 🇬🇧 English
+- 🇪🇸 Spanish (Español)
+- 🇩🇪 German (Deutsch)
+
+Switch languages anytime using the dropdown menu in the toolbar.
+
 ## 📦 Installation
 
-Vous pouvez maintenant utiliser les scripts .bat et .sh fournis dans la V2 (la plus récente) pour installer automatiquement Python et ses dépendances.(Il y a un un fichier .zip contenant les fichiers .py, requirements.txt et les scripts d’installation.)
-1. **Clonez ou téléchargez** ce dépôt
+You can now use the .bat and .sh scripts provided in V2 (the most recent) to automatically install Python and its dependencies. (There is a .zip file containing the .py files, requirements.txt, and installation scripts.)
+
+1. **Clone or download** this repository
    ```bash
-   git clone https://github.com/votre-repo/steam-injector.git
+   git clone https://github.com/your-repo/steam-injector.git
    cd steam-injector
    ```
 
-2. **Installez les dépendances Python**
+2. **Install Python dependencies**
    ```bash
    pip install -r requirements.txt
    ```
 
-3. **Lancez l'application**
+3. **Launch the application**
    ```bash
    python steam_injector.py
    ```
 
-### Installation avec Environnement Virtuel (Recommandé)
+### Installation with Virtual Environment (Recommended)
 ```bash
-# Création de l'environnement virtuel
+# Create virtual environment
 python -m venv steam_injector_env
 
 # Activation (Windows)
@@ -86,60 +103,93 @@ steam_injector_env\Scripts\activate
 # Activation (Linux/macOS)
 source steam_injector_env/bin/activate
 
-# Installation des dépendances
+# Install dependencies
 pip install -r requirements.txt
 
-# Lancement
+# Launch
 python steam_injector.py
 ```
 
-## 🚀 Utilisation
+## 🚀 Usage
 
-### Premier Démarrage
-1. **Configuration automatique** : L'application détecte automatiquement Steam
-2. **Configuration manuelle** : Si nécessaire, indiquez le chemin d'installation
-3. **Navigation** : La fenêtre du navigateur Steam s'ouvre automatiquement
+### First Launch
+1. **Automatic configuration**: The application automatically detects Steam
+2. **Manual configuration**: If necessary, specify the installation path
+3. **Language selection**: Choose your preferred language from the toolbar
+4. **Navigation**: The browser window opens automatically
 
-### Utilisation Normale
-1. **Naviguez** vers la page du jeu Steam que vous souhaitez ajouter
-2. **Détection automatique** : L'App ID s'affiche dès que vous êtes sur la page
-3. **Installation** : Appuyez sur `Entrée` ou le bouton A de votre manette
-4. **Redémarrage** : Redémarrez Steam pour voir le jeu dans votre bibliothèque
+### Normal Usage
+1. **Select site**: Choose between SteamDB or Steam Store from the dropdown menu
+2. **Navigate** to the Steam game page you want to add
+3. **Automatic detection**: The App ID displays as soon as you're on the page
+4. **Installation**: Press `Enter` or click "Add to Steam" button
+5. **Restart**: Click "Restart Steam" button or restart manually to see the game in your library
 
-### Chemins Steam par Défaut
-- **Windows** : `C:\Program Files (x86)\Steam` ou `C:\Program Files\Steam`
-- **Linux** : `~/.steam/steam` ou `~/.local/share/Steam`
-- **macOS** : `~/Library/Application Support/Steam`
+### Steam Restart Feature
+- **One-click restart**: Use the "🔄 Restart Steam" button in the toolbar
+- **Automatic process management**: The application handles closing and reopening Steam
+- **Status updates**: Real-time feedback during the restart process
+- **Safety checks**: Cannot restart during active downloads
+- **Multi-platform support**: Works on Windows, Linux, and macOS
 
-### Clavier
-- **Entrée/Espace** : Ajouter le jeu à Steam
-- **Échap** : Quitter l'application
-- **F1** : Afficher l'aide détaillée
-- **F5** : Actualiser le navigateur web
-- **Ctrl+Q** : Quitter rapidement
+### Default Steam Paths
+- **Windows**: `C:\Program Files (x86)\Steam` or `C:\Program Files\Steam`
+- **Linux**: `~/.steam/steam` or `~/.local/share/Steam`
+- **macOS**: `~/Library/Application Support/Steam`
 
-### Souris
-- **Clic sur le bouton** : Ajouter le jeu à Steam
-- **Redimensionnement** : Glissez les bordures pour ajuster la taille
+### Keyboard Shortcuts
+- **Enter/Space**: Add game to Steam
+- **Ctrl+R**: Restart Steam
+- **F5**: Refresh web browser
+- **F1**: Display detailed help
+- **Ctrl+Q**: Quick quit
+
+### Mouse Controls
+- **Click on button**: Add game to Steam
+- **Dropdown menus**: Switch sites or change language
+- **Resize**: Drag borders to adjust window size
 
 
-### Fichiers Générés
-- **config.json** : Sauvegarde le chemin Steam et les préférences
-- **temp/** : Dossier temporaire pour les téléchargements (auto-nettoyé)
-- **logs/** : Historique des installations (si activé)
+### Generated Files
+- **config.json**: Saves Steam path, language preference, and settings
+- **temp/**: Temporary folder for downloads (auto-cleaned)
+- **logs/**: Installation history (if enabled)
+
+## 📋 File Support
+
+The application automatically handles and installs the following file types:
+- **.manifest** files → Steam depotcache folder
+- **.lua** files → Steam plugins folder
+- **.vdf** files → Steam plugins folder
+- **.acf** files → Steam steamapps folder
+
+## 🔄 Version History
+
+### v2.0.0
+- Added multilingual support (English, French, Spanish, German)
+- Implemented Steam restart functionality
+- Added multiple site support (SteamDB, Steam Store)
+- Enhanced UI with language selector
+- Improved process management for Steam
+- Better error handling and status updates
+- Added force-close capability for stuck Steam processes
+- Improved download reliability with multi-URL fallback
+- Enhanced visual feedback during operations
 
 ### v1.0.0
-- Version initiale avec support de l'ajout de jeux via manifests et lua
-- Interface utilisateur moderne
-- Version .exe pour Windows
-- Support Python pour Windows, Linux et macOS
-
-##  Licence
-
-Ce projet est sous licence MIT. Voir le fichier `LICENSE` pour plus de détails.
+- Initial version with support for adding games via manifests and lua
+- Modern user interface
+- Version .exe for Windows
+- Python support for Windows, Linux, and macOS
 
 
-## 🙏 Remerciements
+## 🙏 Acknowledgments
 
-- **SPIN0ZAi** pour le dépôt SB_manifest_DB
+- **SPIN0ZAi** for the SB_manifest_DB repository
 
+## ⚠️ Notes
+
+- Administrator rights are recommended for full functionality
+- The application requires an active internet connection for downloads
+- Steam must be installed on your system
+- Some games may not be available in the database
