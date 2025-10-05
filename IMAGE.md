@@ -1,7 +1,3 @@
-# [SteamDB](https://steamdb.info)
+# Steam L&M Injector 
 
-<img width="1363" height="812" alt="Steam Injector 1" src="https://github.com/user-attachments/assets/273dff37-6469-4eab-9800-9792a84d88ef" />
-
-# [SteamStore](https://store.steampowered.com)
-
-<img width="1363" height="812" alt="Steam Injector 2" src="https://github.com/user-attachments/assets/e3eee4c7-24e4-4b4e-8665-bd10bbbb0e1a" />
+<img width="1920" height="1017" alt="Steam Injector 05_10_2025 14_56_33" src="https://github.com/user-attachments/assets/6e3946ea-0fb3-4566-9ba7-49dceb405bd7" />
