@@ -1,173 +1,217 @@
-# Steam L&M Injector
+<div align="center">
 
-Modern application for adding games to Steam via manifests and lua. Enhanced graphical interface with integrated browser.
+# Steam Injector
+
+### Modern Electron application for Steam Lua and Manifest management
+
+
+</div>
 
 
 ##  Features
 
-- **Multilingual interface** with support for English, French, Spanish, and German
-- **User interface** with modern design and themed colors
-- **Automatic Steam path detection** on Windows
-- **Error handling** with informative messages
-- **Background downloads** without blocking the interface
-- **Visual indicators** for progress and status
-- **Dependency verification** at startup
-- **Automatic cleanup** of temporary files
-- **Integrated help** with keyboard shortcuts
-- **Steam restart functionality** with automatic process management
-- **Multiple site support** with dropdown selector (SteamDB, Steam Store)
+### Core Functionality
+- **Integrated Web Browser** - Browse Steam Store and SteamDB directly in the app
+- **Automatic App ID Detection** - Automatically detects Steam game App IDs from URLs
+- **Background Downloads** - Downloads and installs games from GitHub repository
+- **Smart Steam Management** - Automatically restarts Steam after installation
 
-### Navigation and Detection
-- Integrated browser with full web engine
-- Automatic App ID detection from any Steam URL
-- Support for multiple URLs: `/app/`, `/apps/`, `appid=` parameters
-- Real-time monitoring of URL changes
-- Site switching between SteamDB and Steam Store
+### User Experience
+- **Experimental Gamepad Support** - Control the entire app with Xbox/PlayStation controllers
+- **Multi-language** - Available in French, English, Spanish, and German
+- **Modern UI** - Clean, minimalist design with smooth transitions
 
-### Interface and Controls  
-- Modern graphical interface with visual indicators
-- Intuitive keyboard shortcuts
-- Language selector with flag icons
-- Dark theme with custom styling
-- Responsive layout with resizable panels
-  
-### Installation and Download
-- Automatic download and extraction of necessary files
-- Background installation without blocking
-- Intelligent permission management
-- Automatic Steam folder configuration
-- Automatic cleanup of temporary files
-- Support for .manifest, .lua, .vdf, and .acf files
-- Multi-URL fallback system for reliable downloads
+### Technical
+- Built with **Electron 28** for cross-platform desktop experience
+- **Chromium-based** web browsing for optimal compatibility
+- **IPC architecture** for secure communication
 
-### Steam Management
-- One-click Steam restart functionality
-- Automatic Steam process detection and closure
-- Force kill capability for stuck processes
-- Automatic Steam relaunch after restart
-- Status updates during restart process
+---
 
 ##  Requirements
 
-- **Python 3.8 or higher**
-- **Web browser** (Chrome/Chromium recommended for optimal display)
-- **Steam account** with local installation
-- **Administrator rights** (recommended for writing to Steam folders)
+- **Node.js** v16 or higher
+- **npm** or **yarn**
+- **Steam** installed on your system
+- **Windows 10/11** (Linux/macOS support planned)
 
-### Supported Systems
--  Windows 10/11 (x64) - .exe version available
--  Windows (Python 3.8+)
--  Linux (Python 3.8+)
--  macOS (Python 3.8+)
-
-##  Supported Languages
-
-- 🇫🇷 French (Français)
-- 🇬🇧 English
-- 🇪🇸 Spanish (Español)
-- 🇩🇪 German (Deutsch)
-
-Switch languages anytime using the dropdown menu in the toolbar.
+---
 
 ##  Installation
 
-You can now use the .bat and .sh scripts provided in V2 (the most recent) to automatically install Python and its dependencies. (There is a .zip file containing the .py files, requirements.txt, and installation scripts.)
+Or simply in the [releases](https://github.com/blizzx4644/Steam-L-M-Injector/releases)
 
-1. **Clone or download** this repository
+### Option 1: From Source
+
+1. **Clone the repository**
    ```bash
-   git clone https://github.com/your-repo/steam-injector.git
+   git clone https://github.com/blizzx4644/Steam-L-M-Injector.git
    cd steam-injector
    ```
 
-2. **Install Python dependencies**
+2. **Install dependencies**
    ```bash
-   pip install -r requirements.txt
+   npm install
    ```
 
-3. **Launch the application**
+3. **Run the application**
    ```bash
-   python steam_injector.py
+   npm start
    ```
 
-### Installation with Virtual Environment (Recommended)
+### Option 2: Quick Start (Windows)
+
+Simply double-click `start.bat` - it will automatically:
+- Check for Node.js installation
+- Install dependencies if needed
+- Launch the application
+
+### Option 3: Build Executable
+
+Create a standalone executable:
 ```bash
-# Create virtual environment
-python -m venv steam_injector_env
-
-# Activation (Windows)
-steam_injector_env\Scripts\activate
-# Activation (Linux/macOS)
-source steam_injector_env/bin/activate
-
-# Install dependencies
-pip install -r requirements.txt
-
-# Launch
-python steam_injector.py
+npm run build
 ```
+The `.exe` file will be generated in the `dist/` folder.
+
+---
 
 ##  Usage
 
-### First Launch
-1. **Automatic configuration**: The application automatically detects Steam
-2. **Manual configuration**: If necessary, specify the installation path
-3. **Language selection**: Choose your preferred language from the toolbar
-4. **Navigation**: The browser window opens automatically
+### Initial Setup
 
-### Normal Usage
-1. **Select site**: Choose between SteamDB or Steam Store from the dropdown menu
-2. **Navigate** to the Steam game page you want to add
-3. **Automatic detection**: The App ID displays as soon as you're on the page
-4. **Installation**: Press `Enter` or click "Add to Steam" button
-5. **Restart**: Click "Restart Steam" button or restart manually to see the game in your library
+1. **Launch the application**
+2. Click **"Auto Detect"** to find your Steam installation
+3. If detection fails, use **"Browse"** to manually select your Steam folder
 
-### Steam Restart Feature
-- **One-click restart**: Use the " Restart Steam" button in the toolbar
-- **Automatic process management**: The application handles closing and reopening Steam
-- **Status updates**: Real-time feedback during the restart process
-- **Safety checks**: Cannot restart during active downloads
-- **Multi-platform support**: Works on Windows, Linux, and macOS
+### Adding a Game
 
-### Default Steam Paths
-- **Windows**: `C:\Program Files (x86)\Steam` or `C:\Program Files\Steam`
-- **Linux**: `~/.steam/steam` or `~/.local/share/Steam`
-- **macOS**: `~/Library/Application Support/Steam`
+1. **Navigate** to a game page on Steam Store or SteamDB
+2. The **App ID** will be detected automatically
+3. Click **"Add to Steam"**
+4. Wait for download and installation to complete
+5. Click **"Restart Steam"** to see the game in your library
 
-### Keyboard Shortcuts
-- **Enter/Space**: Add game to Steam
-- **Ctrl+R**: Restart Steam
-- **F5**: Refresh web browser
-- **F1**: Display detailed help
-- **Ctrl+Q**: Quick quit
+### Supported File Types
 
-### Mouse Controls
-- **Click on button**: Add game to Steam
-- **Dropdown menus**: Switch sites or change language
-- **Resize**: Drag borders to adjust window size
+The application automatically handles:
+- **`.manifest`** files → `Steam\depotcache\`
+- **`.lua`** files → `Steam\config\stplug-in\`
+
+---
+
+##  Gamepad Support (Experimental)
+
+### Button Mapping
+
+| Button | Action |
+|--------|--------|
+| **A** (Xbox) / **✕** (PS) | Select highlighted element |
+| **B** (Xbox) / **○** (PS) | Back |
+| **X** (Xbox) / **□** (PS) | Add to Steam |
+| **Y** (Xbox) / **△** (PS) | Restart Steam |
+| **D-Pad Up/Down** | Navigate UI elements |
+| **D-Pad Left/Right** | Web navigation (Back/Forward) |
+| **LB/RB** | Scroll page |
+| **Start** | Home |
+| **Left Stick** | Scroll page |
+
+### Connection
+
+1. Connect your controller before launching the app
+2. The controller indicator will appear when detected
+3. Use D-Pad to navigate and A button to select
+
+---
+
+##  Languages
+
+Available languages:
+- 🇫🇷 **Français** (French)
+- 🇬🇧 **English**
+- 🇪🇸 **Español** (Spanish)
+- 🇩🇪 **Deutsch** (German)
+
+Change language via the dropdown in the top-right corner.
+
+---
+
+##  Tech Stack
+
+- **[Electron](https://www.electronjs.org/)** - Desktop application framework
+- **[Node.js](https://nodejs.org/)** - JavaScript runtime
+- **[Axios](https://axios-http.com/)** - HTTP client for downloads
+- **[AdmZip](https://www.npmjs.com/package/adm-zip)** - ZIP file extraction
+- **Gamepad API** - Native controller support
+- **WebView** - Integrated web browsing
+
+---
+
+##  Project Structure
+
+```
+steam-injector/
+├── main.js              # Main Electron process
+├── preload.js           # IPC bridge (secure)
+├── renderer.js          # UI logic & translations
+├── gamepad.js           # Controller support
+├── index.html           # User interface
+├── styles.css           # Modern CSS styling
+├── package.json         # Dependencies
+├── start.bat            # Windows launcher
+└── README.md            # This file
+```
+
+---
+
+##  Troubleshooting
+
+### Steam Not Detected
+
+**Solution:**
+- Verify Steam is installed
+- Use **"Browse"** button to manually select Steam folder
+- Folder must contain `steam.exe`
+
+### Download Fails
+
+**Possible causes:**
+- No internet connection
+- Game doesn't exist in the `SPIN0ZAi/SB_manifest_DB` repository
+- Firewall blocking download
+
+**Solutions:**
+1. Check your internet connection
+2. Try a different game
+3. Temporarily disable antivirus
+
+### Steam Won't Restart
+
+**Solution:**
+1. Open Task Manager (`Ctrl+Shift+Esc`)
+2. End all "Steam" processes
+3. Manually restart Steam
+4. Verify Steam path in settings
+
+### Gamepad Not Detected
+
+**Solutions:**
+1. Disconnect and reconnect controller
+2. Restart the application
+3. Check controller in Windows Settings → Devices
+4. Test with [HTML5 Gamepad Tester](https://hardwaretester.com/gamepad)
 
 
-### Generated Files
-- **config.json**: Saves Steam path, language preference, and settings
-- **temp/**: Temporary folder for downloads (auto-cleaned)
-- **logs/**: Installation history (if enabled)
-
-##  File Support
-
-The application automatically handles and installs the following file types:
-- **.manifest** files → Steam depotcache folder
-- **.lua** files → Steam plugins folder
-- **.vdf** files → Steam plugins folder
-- **.acf** files → Steam steamapps folder
-
-
+---
 
 ##  Acknowledgments
 
-- **SPIN0ZAi** for the SB_manifest_DB repository
+- **[SPIN0ZAi](https://github.com/SPIN0ZAi/SB_manifest_DB)** - For the game manifest database
+- **Electron Community** - For the excellent framework
 
-##  Notes
 
-- Administrator rights are recommended for full functionality
-- The application requires an active internet connection for downloads
-- Steam must be installed on your system
-- Some games may not be available in the database
+
+[Report Bug](https://github.com/yourusername/steam-injector/issues) • [Request Feature](https://github.com/yourusername/steam-injector/issues)
+
+</div>
+
