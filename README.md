@@ -7,6 +7,8 @@
 
 </div>
 
+## **WARNING: You must have launched Steam with [Steam Tools](https://steamtools.net/download.html) at least once for the app to work.**
+
 
 ##  Features
 
